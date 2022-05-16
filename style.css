@@ -1,0 +1,112 @@
+/* GENERAL
+---------------------------------------- */
+* {
+    font-size: 10px;
+    font-family: 'Poppins', sans-serif;
+    color: hsl(229, 6%, 66%);
+    text-align: center;
+}
+body {
+    background-color: hsl(0, 0%, 98%);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 95vh;
+}
+
+
+/* FIRST SECTION
+---------------------------------------- */
+.first-sec {
+    max-width: 500px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.heading {
+    font-size: 23px;
+    font-weight: 200;
+    line-height: 28px;
+    margin-bottom: 0;
+}
+strong {
+    display: block;
+    font-weight: 700;
+    font-size: 23px;
+    color: hsl(234, 12%, 34%);
+}
+.subtext {
+    margin-top: 20px;
+    font-weight: 400;
+}
+/* SECOND SECTION
+---------------------------------------- */
+.second-sec {
+    display : flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    max-width: 85%;
+}
+.flex-item {
+    flex: 1 1 330px;
+}
+.box-sup, .box-team, .box-kar, .box-cal {
+    margin: 10px 30px;
+    background-color: white;
+    box-shadow: 5px 10px 20px  hsl(229, 6%, 66%);   
+    padding: 10px 20px 30px; 
+    border-radius: 5px;
+    text-align: left;
+    height: 100px;
+}
+.box-sup {
+    border-top: 5px solid hsl(180, 62%, 55%);
+}
+.box-team {
+    border-top: 5px solid hsl(0, 78%, 62%);
+}
+.box-kar {
+    border-top: 5px solid hsl(34, 97%, 64%);
+    margin-top: 30px;
+}
+.box-cal {
+    border-top: 5px solid hsl(212, 86%, 64%);
+}.box-title {
+    color: hsl(234, 12%, 34%);
+    font-weight: 700;
+    font-size: 13px;
+    text-align: left;
+    margin: 10px 10px 0;
+}
+.box-subtext {
+    text-align: left;
+    margin-left: 10px;
+    font-weight: 200;
+    margin-top: 5px;
+}
+.box-img {
+    width: 40px;
+    float: right;
+    position: relative;
+    top: 5px;
+}
+
+@media all and (max-width: 1050px) {
+    .subtext {
+        width: 250px;
+    }
+    .second-sec {
+        flex-flow: column nowrap;
+        margin-top: 10px;
+    }
+    .flex-item {
+        flex: 1 1 100px;
+    }
+    .box-sup, .box-team, .box-kar, .box-cal {
+        width: 250px;
+    }
+}
